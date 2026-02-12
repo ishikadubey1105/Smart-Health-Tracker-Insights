@@ -1,4 +1,4 @@
-# 🌟 Project Highlights for Recruiters
+
 
 ## Executive Summary
 
@@ -211,32 +211,7 @@ Connects technical work to real-world impact and ROI.
 
 **GitHub**: https://github.com/ishikadubey1105/Smart-Health-Tracker-Insights  
 **Author**: Ishika Dubey  
-**LinkedIn**: [Add your profile]  
-**Email**: [Add your email]
-
+**LinkedIn**: [linkedin.com/in/ishika-dubey](https://www.linkedin.com/in/ishika-dubey?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)  
+**Email**: ishikadubey2020@gmail.com
 ---
 
-## 🎯 For Hiring Managers
-
-### What This Project Proves
-
-✅ **Technical Depth**: Mastery of ML/DL algorithms and frameworks  
-✅ **Problem-Solving**: End-to-end solution from raw data to insights  
-✅ **Code Quality**: Professional, maintainable, documented code  
-✅ **Communication**: Clear documentation and visualization  
-✅ **Business Acumen**: Understanding of real-world applications  
-✅ **Self-Learning**: Implemented advanced concepts independently  
-
-### Interview Talking Points
-
-1. **Model Selection**: Why Deep NN outperformed others
-2. **Feature Engineering**: Impact of derived features
-3. **Handling Imbalance**: Class weighting strategy
-4. **Evaluation Metrics**: When to use precision vs recall
-5. **Scalability**: How to deploy this in production
-
----
-
-**This project represents 100+ hours of work and demonstrates readiness for ML Engineer, Data Scientist, or AI Developer roles.**
-
-⭐ **Star this repo if you find it impressive!**

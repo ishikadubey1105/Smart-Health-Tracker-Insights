@@ -14,10 +14,15 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
-# TensorFlow/Keras imports
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.optimizers import Adam
+# TensorFlow/Keras imports (optional)
+try:
+    from tensorflow.keras.models import Sequential
+    from tensorflow.keras.layers import Dense
+    from tensorflow.keras.optimizers import Adam
+    KERAS_AVAILABLE = True
+except ImportError:
+    KERAS_AVAILABLE = False
+    print("⚠️  TensorFlow/Keras not available. Skipping Keras models.")
 
 # Sklearn imports
 from sklearn.model_selection import train_test_split
@@ -217,8 +222,12 @@ class HealthDeepLearning:
             verbose (int): Keras verbosity level
         
         Returns:
-            model: Trained Keras model
+            model: Trained Keras model or None if Keras not available
         """
+        if not KERAS_AVAILABLE:
+            print("\n⚠️  Skipping Keras model - TensorFlow not installed")
+            return None
+            
         print(f"\n🔄 Training Keras Deep NN (architecture: {hidden_sizes})...")
         
         # Build model

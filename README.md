@@ -329,8 +329,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Ishika Dubey**
 
 - GitHub: [@ishikadubey1105](https://github.com/ishikadubey1105)
-- LinkedIn: [linkedin.com/in/ishikadubey1105](https://linkedin.com/in/ishikadubey1105) <!-- Update with your actual LinkedIn URL -->
-- Email: ishikadubey1105@gmail.com <!-- Update with your actual email -->
+- LinkedIn: [linkedin.com/in/ishika-dubey](https://www.linkedin.com/in/ishika-dubey)
+- Email: ishikadubey2020@gmail.com
 
 ---
 
