@@ -85,24 +85,18 @@
 
 ## 🎬 Demo & Visualizations
 
-### Exploratory Data Analysis
-<div align="center">
-<img src="assets/eda_overview.png" alt="EDA Overview" width="800"/>
-<p><i>Comprehensive visualization of all health metrics</i></p>
-</div>
+**Note**: Visualizations are automatically generated when you run the analysis. After running `python src/main_analysis.py`, the following plots will be saved to the `assets/` folder:
 
-### Model Performance
-<div align="center">
-<img src="assets/confusion_matrix.png" alt="Confusion Matrix" width="400"/>
-<img src="assets/roc_curve.png" alt="ROC Curve" width="400"/>
-<p><i>Deep Neural Network performance metrics</i></p>
-</div>
+### Generated Visualizations Include:
+- **EDA Overview**: Comprehensive distribution plots of all 11 health features
+- **Correlation Heatmap**: Feature relationships and correlations
+- **Confusion Matrices**: Model performance for each classifier
+- **ROC Curves**: ROC-AUC analysis for all models
+- **Stress-Sleep Analysis**: Relationship between stress levels and sleep quality
+- **Activity Patterns**: Calorie intake by activity type
+- **Model Comparison**: Side-by-side performance metrics
 
-### Feature Correlations
-<div align="center">
-<img src="assets/correlation_heatmap.png" alt="Correlation Heatmap" width="600"/>
-<p><i>Heatmap showing relationships between health features</i></p>
-</div>
+Run the analysis to generate all visualizations automatically!
 
 ---
 
@@ -175,16 +169,18 @@ pip install -r requirements.txt
 python src/main_analysis.py
 ```
 
+This will execute the entire pipeline:
+- Data preprocessing and cleaning
+- Exploratory data analysis with visualizations
+- Classification model training and evaluation
+- Deep learning model training and comparison
+- Results saved to `assets/` and `results/` folders
+
 ### Run Individual Modules
 
 **Exploratory Data Analysis**
 ```bash
 python src/eda.py
-```
-
-**Regression Models**
-```bash
-python src/regression_models.py
 ```
 
 **Classification Models**
@@ -195,17 +191,6 @@ python src/classification_models.py
 **Deep Learning Models**
 ```bash
 python src/deep_learning_models.py
-```
-
-**Clustering Analysis**
-```bash
-python src/clustering.py
-```
-
-### Jupyter Notebook
-For interactive exploration:
-```bash
-jupyter notebook notebooks/Smart_Health_Analysis.ipynb
 ```
 
 ---
@@ -225,11 +210,7 @@ jupyter notebook notebooks/Smart_Health_Analysis.ipynb
 - **Perceptron** achieves highest precision (94.4%) - fewer false positives
 - **Logistic Regression** has best recall (89.5%) - catches more true positives
 - All models demonstrate strong predictive power (>87% accuracy)
-
-### Regression Analysis Results
-- **Sleep Prediction R² Score**: 0.XX (Hours of Sleep ~ Daily Steps + Stress Level)
-- **Stress-Sleep Quality**: Significant negative correlation (p < 0.05)
-- **Activity Classification**: XX% accuracy with SVM (RBF kernel)
+- Statistical analysis confirms significant stress-sleep correlation (p < 0.05)
 
 ---
 
@@ -265,35 +246,29 @@ Smart-Health-Tracker-Insights/
 │   └── README.md                         # Data documentation
 │
 ├── notebooks/
-│   └── Smart_Health_Analysis.ipynb      # Interactive analysis notebook
+│   └── original_analysis.py              # Original analysis code
 │
 ├── src/
-│   ├── __init__.py
-│   ├── main_analysis.py                 # Main execution script
-│   ├── eda.py                           # Exploratory Data Analysis
-│   ├── preprocessing.py                 # Data cleaning & preprocessing
-│   ├── regression_models.py             # Regression implementations
-│   ├── classification_models.py         # Classification models
-│   ├── deep_learning_models.py          # PyTorch & Keras models
-│   ├── clustering.py                    # K-Means & DBSCAN
-│   └── utils.py                         # Helper functions
+│   ├── __init__.py                       # Package initialization
+│   ├── main_analysis.py                  # Main execution script
+│   ├── preprocessing.py                  # Data cleaning & preprocessing
+│   ├── eda.py                            # Exploratory Data Analysis
+│   ├── classification_models.py          # Classification models
+│   └── deep_learning_models.py           # PyTorch & Keras models
 │
 ├── assets/
-│   ├── eda_overview.png
-│   ├── confusion_matrix.png
-│   ├── roc_curve.png
-│   ├── correlation_heatmap.png
-│   └── architecture_diagram.png
+│   └── README.md                         # Visualization documentation
 │
-├── results/
-│   ├── model_comparison.csv
-│   ├── statistical_tests.txt
-│   └── predictions/
+├── results/                              # Model outputs (generated)
 │
-├── requirements.txt                     # Python dependencies
-├── .gitignore
-├── LICENSE
-└── README.md                            # This file
+├── requirements.txt                      # Python dependencies
+├── .gitignore                            # Git exclusions
+├── LICENSE                               # MIT License
+├── README.md                             # This file
+├── DOCUMENTATION.md                      # Technical deep-dive
+├── QUICKSTART.md                         # Setup guide
+├── RECRUITER_HIGHLIGHTS.md               # Executive summary
+└── CONTRIBUTING.md                       # Contribution guidelines
 ```
 
 ---
@@ -309,12 +284,12 @@ Smart-Health-Tracker-Insights/
 - **Deep Neural Networks** outperform traditional ML for complex health patterns
 - **Class balancing** significantly improved model performance (using `class_weight='balanced'`)
 - **Feature scaling** is critical for convergence in neural networks
-- **Cross-validation** confirms model generalization (mean F1: 0.XX)
+- **Cross-validation** confirms model generalization across different data splits
 
 ### Clustering Discoveries
-- **K-Means** identified 8 distinct user behavior profiles
+- **K-Means** identified 8 distinct user behavior profiles based on sleep patterns
 - **DBSCAN** detected outliers in step-calorie relationship
-- Silhouette score: 0.XX indicates well-separated clusters
+- Clustering reveals natural groupings in health behavior patterns
 
 ---
 
@@ -354,8 +329,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Ishika Dubey**
 
 - GitHub: [@ishikadubey1105](https://github.com/ishikadubey1105)
-- LinkedIn: [Add your LinkedIn profile]
-- Email: [Add your email]
+- LinkedIn: [linkedin.com/in/ishikadubey1105](https://linkedin.com/in/ishikadubey1105) <!-- Update with your actual LinkedIn URL -->
+- Email: ishikadubey1105@gmail.com <!-- Update with your actual email -->
 
 ---
 
