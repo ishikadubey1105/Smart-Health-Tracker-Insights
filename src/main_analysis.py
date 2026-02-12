@@ -23,20 +23,22 @@ def main():
     
     # Step 1: Load and preprocess data
     print("\n[STEP 1/4] Loading and preprocessing data...")
-    data_path = "../data/smart_health_tracker_data.csv"
-    df, preprocessor = load_and_preprocess_data(data_path, verbose=True)
+    data_path = Path(__file__).parent.parent / "data" / "smart_health_tracker_data.csv"
+    df, preprocessor = load_and_preprocess_data(str(data_path), verbose=True)
     
     # Step 2: Exploratory Data Analysis
     print("\n[STEP 2/4] Performing exploratory data analysis...")
-    perform_eda(df, save_dir='../assets')
+    assets_dir = Path(__file__).parent.parent / "assets"
+    perform_eda(df, save_dir=str(assets_dir))
     
     # Step 3: Train classification models
     print("\n[STEP 3/4] Training classification models...")
-    classifier = train_sleep_quality_classifiers(df, save_dir='../results')
+    results_dir = Path(__file__).parent.parent / "results"
+    classifier = train_sleep_quality_classifiers(df, save_dir=str(results_dir))
     
     # Step 4: Train deep learning models
     print("\n[STEP 4/4] Training deep learning models...")
-    dl_trainer = train_deep_learning_models(df, save_dir='../results')
+    dl_trainer = train_deep_learning_models(df, save_dir=str(results_dir))
     
     # Final summary
     print("\n" + "="*70)
