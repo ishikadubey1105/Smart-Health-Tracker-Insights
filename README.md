@@ -354,8 +354,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 **Ishika Dubey**
 
 - GitHub: [@ishikadubey1105](https://github.com/ishikadubey1105)
-- LinkedIn: [Add your LinkedIn profile]
-- Email: [Add your email]
+- LinkedIn: https://www.linkedin.com/in/ishika-dubey?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+- Email: ishikadubey2020@gmail.com
 
 ---
 
